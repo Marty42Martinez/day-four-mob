@@ -1,0 +1,29 @@
+.fruit-button{
+    font-size: 15px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.apple {
+    background: tomato;
+}
+
+.banana {
+    background: khaki;
+}
+
+.pear {
+    background: yellowgreen;
+}
+
+.blueberry {
+    background: rgb(99, 99, 244);
+}
+
+.orange {
+    background: orange;
+}
+
+.grape {
+    background: darkmagenta;
+}
