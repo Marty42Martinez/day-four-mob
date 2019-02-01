@@ -10,19 +10,16 @@ function makeSegment(fruit2) {
     bugBody.appendChild(segment);
 }
 
-//move a class of segment up when button is clicked
 function dance(fruit) {
     const selected = '.segment.' + fruit;
     const segments = document.querySelectorAll(selected);
-    console.log(segments);
-
-
-    //write for loop here to add class to every item selected;
+    const dancing = document.querySelectorAll('.dance');
+    dancing.forEach(function(element) {
+        element.classList.remove('dance');
+    });
     segments.forEach(function(element) {
         element.classList.add('dance');
     });
-
-    // const activeSegments = danceButtons.querySelectorAll('dance');
 }
 
 for(let i = 0; i < fruitArray.length; i++) {
@@ -47,7 +44,6 @@ for(let i = 0; i < fruitArray.length; i++) {
     danceButtons.appendChild(danceButton);
 
     danceButton.addEventListener('click', function() {
-        //call function
         dance(fruit);
     });
 }
