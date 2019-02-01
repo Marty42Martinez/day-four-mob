@@ -1,5 +1,11 @@
 body {
-    background: silver;
+    background: white;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
 }
 .fruit-button{
     font-size: 15px;
